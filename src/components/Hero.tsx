@@ -95,7 +95,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <button 
             onClick={() => scrollToSection('about')}
             className="p-2 rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300"
