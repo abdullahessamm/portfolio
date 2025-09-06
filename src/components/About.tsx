@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: <Code2 className="w-8 h-8" />,
       title: "Frontend Development",
-      description: "Modern React, TypeScript, and cutting-edge UI frameworks"
+      description: "Modern React, vue.js, TypeScript, and cutting-edge UI frameworks"
     },
     {
       icon: <Database className="w-8 h-8" />,
@@ -69,18 +69,13 @@ const About = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-foreground">My Journey</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  With years of experience in full-stack development, I've worked on diverse 
-                  projects ranging from e-commerce platforms to enterprise applications.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  I'm constantly learning new technologies and staying up-to-date with industry 
-                  best practices to deliver high-quality, maintainable code.
+                  I studied Communications Engineering, but my passion for programming started in 2019. I grew into a full-stack developer working with Laravel and Express.js. Recently, together with a partner, I co-founded Swift Care, a company that provides programming and medical devices services.
                 </p>
               </div>
               
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-foreground font-medium">Problem Solving</span>
+                  <span className="text-foreground font-medium">Front-End Development</span>
                   <span className="text-primary">95%</span>
                 </div>
                 <div className="w-full bg-border rounded-full h-2">
@@ -88,19 +83,19 @@ const About = () => {
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-foreground font-medium">Code Quality</span>
+                  <span className="text-foreground font-medium">Laravel (Back-End)</span>
+                  <span className="text-primary">93%</span>
+                </div>
+                <div className="w-full bg-border rounded-full h-2">
+                  <div className="bg-hero-gradient h-2 rounded-full w-[93%] transition-all duration-1000"></div>
+                </div>
+                
+                <div className="flex justify-between items-center">
+                  <span className="text-foreground font-medium">Express js (Back-End)</span>
                   <span className="text-primary">90%</span>
                 </div>
                 <div className="w-full bg-border rounded-full h-2">
                   <div className="bg-hero-gradient h-2 rounded-full w-[90%] transition-all duration-1000"></div>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-foreground font-medium">Team Collaboration</span>
-                  <span className="text-primary">92%</span>
-                </div>
-                <div className="w-full bg-border rounded-full h-2">
-                  <div className="bg-hero-gradient h-2 rounded-full w-[92%] transition-all duration-1000"></div>
                 </div>
               </div>
             </div>

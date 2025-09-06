@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="text-muted-foreground flex items-center justify-center gap-2">
             Made with <Heart className="w-4 h-4 text-red-500 fill-current" /> by 
             <span className="bg-hero-gradient bg-clip-text text-transparent font-semibold">
-              Full-Stack Developer
+              Abdullah Essam
             </span>
           </p>
           <p className="text-sm text-muted-foreground mt-2">

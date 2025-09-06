@@ -5,38 +5,24 @@ const Skills = () => {
     {
       title: "Frontend",
       skills: [
-        "React", "TypeScript", "Next.js", "Vue.js", "HTML5", "CSS3", 
+        "React", "TypeScript", "Vue.js", "HTML5", "CSS3", 
         "Tailwind CSS", "SASS", "JavaScript", "jQuery"
       ]
     },
     {
       title: "Backend", 
       skills: [
-        "Node.js", "Express.js", "Python", "Django", "PHP", "Laravel",
+        "Node.js", "Express.js", "Python", "PHP", "Laravel",
         "REST APIs", "GraphQL", "Microservices", "Socket.io"
       ]
     },
     {
       title: "Database",
       skills: [
-        "PostgreSQL", "MySQL", "MongoDB", "Redis", "Supabase", 
-        "Firebase", "Prisma", "Sequelize", "Database Design"
+        "MySQL", "MongoDB", "Redis", 
+        "Firebase", "Database Design"
       ]
     },
-    {
-      title: "DevOps & Tools",
-      skills: [
-        "Git", "Docker", "AWS", "Vercel", "Netlify", "CI/CD", 
-        "Linux", "nginx", "Webpack", "Vite"
-      ]
-    },
-    {
-      title: "Mobile & Other",
-      skills: [
-        "React Native", "Flutter", "Ionic", "PWA", "Electron",
-        "Testing", "Jest", "Cypress", "Figma", "UI/UX Design"
-      ]
-    }
   ];
 
   return (

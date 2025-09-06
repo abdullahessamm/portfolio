@@ -2,56 +2,62 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import SeProject from '@/assets/se-project.jpg';
+import C1Project from '@/assets/c1-project.png';
+import AMProject from '@/assets/erp-project.png';
+import MTCProject from '@/assets/Med Tech Care.png';
+import EldabyProject from '@/assets/eldaby-project.png';
+import PortfolioProject from '@/assets/this-project.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with modern UI, payment integration, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "Street English Platform",
+      description: "A full-stack e-learning solution with modern UI, payment integration, and admin dashboard. Built with Vue.js, Laravel, and MySQL.",
+      image: SeProject,
+      technologies: ["Vue.js", "Laravel", "MySQL", "PrimeVue", "PrimeFlex"],
+      liveUrl: "https://streetenglish.net",
+      githubUrl: "https://github.com/abdullahessamm"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, team features, and intuitive drag-and-drop interface.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "TypeScript", "Socket.io", "MongoDB", "Express"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "C1 App (Comming Soon)",
+      description: "E-learning mobile app with modern UI, payment integration, and admin dashboard — built using React Native, React, Express.js, and MongoDB.",
+      image: C1Project,
+      technologies: ["React", "React Native", "TypeScript", "Socket.io", "MongoDB", "Express"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/abdullahessamm"
     },
     {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with data visualization, scheduling, and performance tracking.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
-      technologies: ["Vue.js", "Python", "Django", "Chart.js", "Redis"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "Auto Manage (private app)",
+      description: "Simple ERP app built for private orgnization (local system) with modern UI, built using Vue.js, Laravel PHP, and MySQL.",
+      image: AMProject,
+      technologies: ["Vue.js", "Laravel", "MySQL", "PrimeVue", "PrimeFlex"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/abdullahessamm"
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI integration, file sharing, and group messaging capabilities.",
-      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React Native", "Firebase", "OpenAI API", "WebRTC"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "MTC (Med Tech Care)",
+      description: "Medical devices companies management app (live instance used by a real company) — built with Vue.js, Laravel (PHP), and MySQL.",
+      image: MTCProject,
+      technologies: ["PrimeVue", "Laravel", "MySQL", "Vue.js", "PrimeFlex"],
+      liveUrl: "https://te-group.online",
+      githubUrl: "https://github.com/abdullahessamm"
     },
     {
-      title: "Blockchain Wallet",
-      description: "Secure cryptocurrency wallet with multi-chain support, transaction history, and portfolio tracking.",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=center",
-      technologies: ["React", "Web3.js", "Ethereum", "MetaMask", "Material-UI"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "Eldaby Store (under maintenance)",
+      description: "Store application to showcase products and receive client orders — built with Laravel, Livewire, and MySQL.",
+      image: EldabyProject,
+      technologies: ["Laravel", "Livewire", "Tailwind CSS", "MySQL", "HTML5", "CSS3", "JavaScript"],
+      liveUrl: "https://eldaby.com",
+      githubUrl: "https://github.com/abdullahessamm"
     },
     {
-      title: "Learning Management System",
-      description: "Educational platform with course creation, video streaming, progress tracking, and certificate generation.",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop&crop=center",
-      technologies: ["Next.js", "Prisma", "AWS S3", "Stripe", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      title: "My Portfolio (this website)",
+      description: "This project built for introduce my self, my work and skills. built with React, TypeScript, and Tailwind CSS.",
+      image: PortfolioProject,
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/abdullahessamm/portfolio"
     }
   ];
 
@@ -138,7 +144,7 @@ const Projects = () => {
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                      Live Preview
                     </a>
                   </Button>
                   <Button 
@@ -155,16 +161,6 @@ const Projects = () => {
               </div>
             </Card>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-primary/30 text-primary hover:bg-primary/10"
-          >
-            View All Projects
-          </Button>
         </div>
       </div>
     </section>

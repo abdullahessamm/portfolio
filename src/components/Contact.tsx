@@ -9,41 +9,20 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "contact@example.com",
-      link: "mailto:contact@example.com"
+      value: "abdoessam.2010@gmail.com",
+      link: "mailto:abdoessam.2010@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "(+20) 1505715089",
+      link: "tel:+201505715089"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      value: "New York, NY",
-      link: "#"
-    }
-  ];
-
-  const socialLinks = [
-    {
-      icon: <Github className="w-6 h-6" />,
-      name: "GitHub",
-      url: "https://github.com",
-      color: "hover:text-primary"
-    },
-    {
-      icon: <Linkedin className="w-6 h-6" />,
-      name: "LinkedIn", 
-      url: "https://linkedin.com",
-      color: "hover:text-blue-400"
-    },
-    {
-      icon: <Twitter className="w-6 h-6" />,
-      name: "Twitter",
-      url: "https://twitter.com",
-      color: "hover:text-blue-400"
+      value: "Cairo, Egypt",
+      link: "https://www.google.com/maps/place/%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%E2%80%AD/@30.0595563,31.2996639,13z/data=!3m1!4b1!4m6!3m5!1s0x14583fa60b21beeb:0x79dfb296e8423bba!8m2!3d30.0444196!4d31.2357116!16zL20vMDF3MnY?entry=ttu&g_ep=EgoyMDI1MDkwMy4wIKXMDSoASAFQAw%3D%3D"
     }
   ];
 
@@ -84,6 +63,7 @@ const Contact = () => {
                   <a 
                     href={item.link}
                     className="flex items-center space-x-4 group"
+                    target='_blank'
                   >
                     <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                       {item.icon}
@@ -97,25 +77,6 @@ const Contact = () => {
                   </a>
                 </Card>
               ))}
-            </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold mb-4 text-foreground">Follow Me</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-glow-primary group ${social.color}`}
-                  >
-                    <div className="text-muted-foreground group-hover:scale-110 transition-transform duration-300">
-                      {social.icon}
-                    </div>
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
           

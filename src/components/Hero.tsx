@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
 
@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="absolute bottom-32 right-20 w-32 h-32 bg-secondary/20 rounded-full blur-xl animate-pulse delay-1000" />
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent/20 rounded-full blur-xl animate-pulse delay-500" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative flex flex-col items-center z-10">
         <div className="text-center max-w-4xl mx-auto">
           <div className="space-y-6 animate-fade-in">
             <div className="text-lg text-primary font-medium">
@@ -37,10 +37,10 @@ const Hero = () => {
             
             <h1 className="text-5xl md:text-7xl font-bold">
               <span className="bg-hero-gradient bg-clip-text text-transparent">
-                Full-Stack
+                Abdullah
               </span>
               <br />
-              <span className="text-foreground">Developer</span>
+              <span className="text-foreground">Full-Stack Developer</span>
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -67,35 +67,10 @@ const Hero = () => {
                 Get In Touch
               </Button>
             </div>
-            
-            <div className="flex justify-center space-x-6 pt-8">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow-primary group"
-              >
-                <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow-primary group"
-              >
-                <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-              </a>
-              <a 
-                href="mailto:contact@example.com"
-                className="p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow-primary group"
-              >
-                <Mail className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
-              </a>
-            </div>
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="mt-16 animate-bounce">
           <button 
             onClick={() => scrollToSection('about')}
             className="p-2 rounded-full border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300"
